@@ -18,3 +18,8 @@ function deleteFromDriverByKey(driver, key) {
   delete clone[key]
   return clone
 }
+
+function destructivelyDeleteFromDriverByKey(driver, key) {
+  delete driver[key]
+  return driver
+}
